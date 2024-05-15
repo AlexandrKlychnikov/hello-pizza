@@ -1,0 +1,25 @@
+@import './variables'
+
+.categories
+  ul
+    margin-top: 15px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    gap: 15px
+    li
+      background-color: lighten(yellow, 45%)
+      color:#9f9a9a
+      padding: 13px 30px
+      border-radius: 30px
+      margin-right: 10px
+      font-weight: bold
+      cursor: pointer
+      transition: background-color 0.1s ease-in-out
+      &:hover
+        background-color: darken(yellow, 2%)
+      &:active
+        background-color: darken(yellow, 5%)
+      &.active
+        background-color: yellow
+        color: #000
